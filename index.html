@@ -89,13 +89,13 @@
                 var name = propKeys[i] + " / " + keyKeys[j];
                 var firstStep = 0;
                 var finalStep = 0;
-                newResults[name]['Conversion'] = 0;
+                newResults[name] = 0;
                 for(k = 0; k<dates.length; k++){
                  firstStep += results[firstKeys[i]][keyKeys[j]][dates[k]][0]['count'];
                  finalStep += results[firstKeys[i]][keyKeys[j]][dates[k]][eventsNum - 1]['count'];
                 }
                 if(firstStep > 0) {
-                  newResults[name]['Conversion'] = (finalStep / firstStep) * 100;
+                  newResults[name] = (finalStep / firstStep) * 100;
                 }
               }
             }
