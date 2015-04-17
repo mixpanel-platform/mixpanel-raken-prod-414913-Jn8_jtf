@@ -19,11 +19,11 @@
       MP.api.ready(function() {
         var dateSelect  = $('#dateSelect').MPDatepicker();
         var eventGraph  = $('#graph').MPChart({chartType: 'bar'});
-        var eventTable  = $('#table').MPTable({firstColHeader: '   Gender / utm_source   '});
+        var eventTable  = $('#table').MPTable({firstColHeader: '   Email / af_sub1   '});
         
         var options = {
           items: [
-            {label: '-- Select interval length in days --', value: 0},
+            {label: '-- Select conversion interval in days --', value: 0},
             {label: '1', value: 1},
             {label: '7', value: 7},
             {label: '14', value: 14},
