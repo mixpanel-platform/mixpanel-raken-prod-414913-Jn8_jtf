@@ -95,7 +95,9 @@
                  finalStep += results[firstKeys[i]][keyKeys[j]][dates[k]][eventsNum - 1]['count'];
                 }
                 if(firstStep > 0) {
-                  newResults[name] = (finalStep / firstStep) * 100;
+                  var currentDict = {'Conversion': 0};
+                  currentDict['Conversion'] = (finalStep / firstStep) * 100;
+                  newResults[name] = currentDict;
                 }
               }
             }
